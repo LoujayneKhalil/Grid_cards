@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Barlow-Semi";
+    src: url(./assets/fonts/Barlow-Semi-Condensed/barlow-semi-condensed.regular.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 165px;
+    background: #edf1fa;
+    color: white;
+    font-family: Barlow-Semi;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+.daniel{
+    background-color: #733fc8;
+    grid-column: 1/3;
+    padding: 30px;
+    background-image: url(./assets/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 400px;
+}
+.jonathan{
+    background-color: #49556d;
+    padding: 30px;
+    
+}
+.patrick{
+    background-color: #191f2d;
+    padding: 30px;
+    grid-column: 2/4;
+}
+.kira{
+    background-color: white;
+    padding: 30px;
+
+    grid-row: 1/3;
+    grid-column: 4;
+    
+}
+.jeanette{
+    background-color: white;
+    padding: 30px;
+}
+
+img{
+    border-radius: 50%;
+}
+
+ .daniel img,
+ .patrick img{
+    border: 3px solid #a682e4;
+ }  
+
+ .card{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+
+ .paragraph2,
+ .verification{
+    color: #989b9f;
+ }
+ 
+ .kira .paragraph1,
+ .jeanette .paragraph1,
+ .kira .name,
+ .jeanette .name{
+    color: black;
+ }
+
+ .header{
+    display: flex;
+    gap: 10px;
+ }
+ .title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+ }
+
+ .paragraph1{
+    font-weight: 600;
+    margin-bottom: 20px;
+ }
